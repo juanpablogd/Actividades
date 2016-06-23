@@ -1,7 +1,7 @@
 {
-  "name": "angular2-quickstart",
+  "name": "seguimiento-actividades",
   "version": "1.0.0",
-  "description": "QuickStart package.json from the documentation, supplemented with testing support",
+  "description": "Seguimiento-Actividades en la gobernación",
   "scripts": {
     "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
     "docker-build": "docker build -t ng2-quickstart .",
@@ -18,7 +18,7 @@
     "webdriver:update": "webdriver-manager update"
   },
   "keywords": [],
-  "author": "",
+  "author": "Juan Pablo Garzón Dueñas",
   "license": "ISC",
   "dependencies": {
     "@angular/common":  "2.0.0-rc.3",
@@ -39,7 +39,9 @@
     "zone.js": "^0.6.12",
 
     "angular2-in-memory-web-api": "0.0.12",
-    "bootstrap": "^3.3.6"
+    "bootstrap": "^3.3.6",
+
+    "socket.io-client": "^1.4.6"
   },
   "devDependencies": {
     "concurrently": "^2.0.0",
