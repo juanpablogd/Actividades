@@ -1,6 +1,6 @@
 // Configuration for the Wallaby Visual Studio Code testing extension
 // https://marketplace.visualstudio.com/items?itemName=WallabyJs.wallaby-vscode
-// Note: Wallaby is not open source and costs money
+// Note: Wallaby is not open source and costs money 
 
 module.exports = function () {
 
