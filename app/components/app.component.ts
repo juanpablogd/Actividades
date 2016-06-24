@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
 import * as io from "socket.io-client";
-import {Actividad} from './models/actividad';
+import {Actividad} from '../models/actividad';
 
 @Component({
   selector: 'my-app',
