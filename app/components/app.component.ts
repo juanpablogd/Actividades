@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import * as io from "socket.io-client";
 import {Actividad} from '../models/actividad';
+import {ActividadList} from './actividades/lista/actividad-list';
 
 @Component({
   selector: 'my-app',
@@ -14,7 +15,9 @@ import {Actividad} from '../models/actividad';
                   '<td><span class="glyphicon glyphicon-edit"></span></td>'+
                 '</tbody></table>'+
             '</div>'
+
 })
+
 
 export class AppComponent {
     socket:SocketIOClient.Socket;

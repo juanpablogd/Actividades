@@ -1,0 +1,34 @@
+<h1>Actividades</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Descripción</th>
+
+      <th>
+        <a href="" [routerLink]="['/ActividadCrear']">
+          <i class="fa fa-plus"></i>
+        </a>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngIf="!actividades.length">
+      <td colspan="5">Loading...</td>
+    </tr>
+    <tr  *ngFor="#actividades of actividades">
+      <td>{{actividad.id}}</td>
+      <td>{{actividad.descripcion}}</td>
+
+      <td>
+        <a href="" [routerLink]="['/ActividadEditar', {id: actividad.id}]">
+          <i class="fa fa-pencil"></i>
+        </a>
+        <a href="javascript:void(0)" (click)="eliminarModel(actividad)">
+          <i class="fa fa-trash"></i>
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>
